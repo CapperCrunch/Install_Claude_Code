@@ -9,7 +9,6 @@ if ((Get-Command "node" -ErrorAction SilentlyContinue) -eq $null) {
     
     if ((Get-Command "choco" -ErrorAction SilentlyContinue) -eq $null) {
         Write-Host "Error: Chocolatey is not installed or not in your PATH. Please install Chocolatey first." -ForegroundColor Red
-        Exit
     }
     
     choco install nodejs.install -y
